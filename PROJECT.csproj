@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{916A8F70-A5B6-4E97-BFCD-91AA01C72ED4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dakirby309-Windows-8-Metro-Folders-OS-Libraries-Metro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.15.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Logging.6.15.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=6.15.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Protocols.6.15.0\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.15.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Tokens.6.15.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBookForm.Designer.cs">
+      <DependentUpon>addBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudentForm.Designer.cs">
+      <DependentUpon>addStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createAccountForm.Designer.cs">
+      <DependentUpon>createAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteBookForm.Designer.cs">
+      <DependentUpon>deleteBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueBook.Designer.cs">
+      <DependentUpon>issueBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayFineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayFineForm.Designer.cs">
+      <DependentUpon>PayFineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="returnBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnBookForm.Designer.cs">
+      <DependentUpon>returnBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchBookForm.Designer.cs">
+      <DependentUpon>searchBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateBookForm.Designer.cs">
+      <DependentUpon>updateBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation.cs" />
+    <Compile Include="viewBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBookForm.Designer.cs">
+      <DependentUpon>viewBookForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBookForm.resx">
+      <DependentUpon>addBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudentForm.resx">
+      <DependentUpon>addStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createAccountForm.resx">
+      <DependentUpon>createAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteBookForm.resx">
+      <DependentUpon>deleteBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueBook.resx">
+      <DependentUpon>issueBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayFineForm.resx">
+      <DependentUpon>PayFineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="returnBookForm.resx">
+      <DependentUpon>returnBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchBookForm.resx">
+      <DependentUpon>searchBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateBookForm.resx">
+      <DependentUpon>updateBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBookForm.resx">
+      <DependentUpon>viewBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dakirby309-Windows-8-Metro-Folders-OS-Libraries-Metro.ico" />
+    <Content Include="LIBRARY.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libraryManagmentSystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libraryManagmentSystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>libraryManagmentSystem.mdf</DependentUpon>
+    </Content>
+    <Content Include="LIBRARY_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>LIBRARY.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
